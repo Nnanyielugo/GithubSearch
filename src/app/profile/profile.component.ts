@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
   
   constructor(private githubService: GithubService) {
     // code to get user and repo moved to the searchUser method so that there'll be no default profile displayed on initial load
-    // then set user to false
+    // then set user to null since 'false' throws an 'unassignable' error
     this.user = null;
   }
 

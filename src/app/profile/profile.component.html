@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-md-12">
     <form action="">
-      <div class="form-group">
+      <div class="form-inline">
 
         <!-- after the two-way data-binding to dynamically change username, add a search function (via event binding) to search repositories as a user types -->
-        <input class="form-control" type="text" placeholder="Enter a Github Username..." [(ngModel)]="username" name="search" >
+        <input class="form-control col-md-9" type="text" placeholder="Enter a Github Username..." [(ngModel)]="username" name="search" >
         <!-- moved search method to button and bound to click event to avoid searching repositories on each keypress -->
         <button class="btn btn-primary btn-sm" (click)="searchUser()">Search</button>
       </div>

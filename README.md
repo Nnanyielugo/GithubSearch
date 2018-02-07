@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.33.1.
 
+
+*****************************************
+Keyup search of repositories was disabled because of the multiple requests it made to the api per keypress, so much that the noemal usage limit was exceeded in no time. I moved the search method instead to a button with a click event.
+
+If you want to use the keypress search function, go to profile.component.html, comment out the button, then add a keyup event binding to the search bar and pass the searchUser method to it.
+****************************************
+TODO: Add login functionality, then an express backend.
+****************************************
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
